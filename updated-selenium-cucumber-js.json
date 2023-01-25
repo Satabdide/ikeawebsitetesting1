@@ -2,6 +2,10 @@
     "browser": "chrome",
     "timeout": 100000,
     "goog:chromeOptions": {
-      "args": ["'--headless","--disable-gpu","disable-dev-shm-usage"]
-    }
+     "args": ["--headless","--disable-gpu","disable-dev-shm-usage"],
+     "services":[["selenium-standalone",{"drive":{"chrome":"108.0.5359.71"}}]]
   }
+  }
+  
+
+
