@@ -1,4 +1,7 @@
   {
     "browser": "chrome",
-    "timeout": 100000
+    "timeout": 100000,
+    "goog:chromeOptions": {
+      "args": ["'--headless","--disable-gpu","disable-dev-shm-usage"]
+    }
   }
