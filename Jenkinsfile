@@ -1,30 +1,14 @@
+pipeline{
+	agent{
+		tools {nodejs "node"}
 
-    
-pipeline {
-  agent any
-    
-  tools {nodejs "node"}
-    
-  stages {
-        
-    stage('Git') {
-      steps {
-        git 'https://github.com/****/****'
+		stages {
+			stage ('Build'){
+				steps{
+					git 'https://github.com/Satabdide/ikeawebsitetesting1.git'
+					sh 'npm install'
       }
-    }
-     
-    stage('Build') {
-      steps {
-        sh 'npm install'
-         sh '<<Build Command>>'
-      }
-    }  
-    
-            
-    stage('Test') {
-      steps {
-        sh 'node test'
-      }
-    }
-  }
+			}
+		}
+	}
 }
