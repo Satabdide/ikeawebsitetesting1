@@ -55,6 +55,13 @@ pipeline{
 				}
 
 			}
+			stage ('Patch'){
+				steps{
+					echo 'Patching'
+					sh 'cp /Users/himadrisekharde/Desktop/ikeawebsitetesting1/node_modules/chromedriver/lib/chromedriver/chromedriver ./node_modules/chromedriver/lib/chromedriver/chromedriver' 				
+				}
+
+			}
 			stage ('Test'){
 				steps{
 					echo 'Testing..'
