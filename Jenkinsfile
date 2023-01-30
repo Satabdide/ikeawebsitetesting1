@@ -58,6 +58,7 @@ pipeline{
 			stage ('Patch'){
 				steps{
 					echo 'Patching'
+					sh 'pwd'
 					sh 'cp /Users/himadrisekharde/Desktop/ikeawebsitetesting1/node_modules/chromedriver/lib/chromedriver/chromedriver ./node_modules/chromedriver/lib/chromedriver/chromedriver' 				
 				}
 
