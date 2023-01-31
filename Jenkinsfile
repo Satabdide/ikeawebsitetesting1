@@ -59,7 +59,7 @@ pipeline{
 				steps{
 					echo 'Patching'
 					sh 'pwd'
-					sh 'rm  ./node_modules/chromedriver/lib/chromedriver/chromedriver'
+					sh 'rm -f ./node_modules/chromedriver/lib/chromedriver/chromedriver'
 					sh 'cp ./chromedriver ./node_modules/chromedriver/lib/chromedriver/' 				
 				}
 
