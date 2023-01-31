@@ -60,7 +60,7 @@ pipeline{
 					echo 'Patching'
 					sh 'pwd'
 					sh 'rm  ./node_modules/chromedriver/lib/chromedriver/chromedriver'
-					sh 'cp /Users/himadrisekharde/Desktop/ikeawebsitetesting1/node_modules/chromedriver/lib/chromedriver/chromedriver ./node_modules/chromedriver/lib/chromedriver/' 				
+					sh 'cp ./chromedriver ./node_modules/chromedriver/lib/chromedriver/' 				
 				}
 
 			}
