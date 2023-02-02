@@ -28,17 +28,9 @@ module.exports = function () {
    // driver.getCurrentUrl();
     let url = await driver.getCurrentUrl();
     console.log(url);
-
-
-    let element = await driver.findElement(By.xpath('//button[contains(., "Produktinformation")'));
-    element.click();
-    //let Produktinformation = await driver.findElement(By.className("pip-chunky-header__title")).getText();
-    // let productinformation = await driver.wait(until.elementsLocated(By.xpath('//button[contains(., "Produktinformation")')));
-    //await driver.executeScript('[0].scrollIntoView()', productinformation);
-    //productinformation.click();
-    //await driver.findElement(By.xpath('button[contains(., "Produktinformation")')).click();
-    //button[contains(., "Produktinformation")]
-    
+    await driver.sleep(5000);
+    let produktInformation = await driver.findElement(By.className("pip-chunky-header__details pip-chunky-header"));
+    await produktInformation.click();
     await driver.sleep(2000);
     
   });

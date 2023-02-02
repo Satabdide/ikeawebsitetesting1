@@ -1,4 +1,4 @@
-module.exports = function () {
+/*module.exports = function () {
   this.Given(/^I add (\d+) "([^"]*)" product$/, async function (numberOfItems,productName) {
 
     await driver.findElement(By.css('input[type="search"]')).sendKeys(productName, selenium.Key.ENTER);
@@ -12,7 +12,33 @@ module.exports = function () {
   });
 
   this.When(/^I add (\d+) copies of items from shopping cart$/, async function (numberOfItems) {
+    await driver.sleep(10000);
+    await driver.executeScript('window.scrollTo(0,0)');
 
+    let miniCart = await driver.findElement(By.className('hnf-btn__inner js-shopping-cart-icon'));
+    await miniCart.click();
+    await driver.sleep(5000);
+    // inspected dropdown button in shopping cart
+    let CartAddButton = await driver.findElement(by.className('cart-ingka-quantity-dropdown'));
+    await CartAddButton.click();
+    await driver.sleep(2000);
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
     let popUpButton = await driver.findElement(By.className('hnf-btn__inner hnf-btn__inner--icon-tertiary-inverse hnf-btn--xsmall'));
     //let popUpButton = await driver.findElement(By.className('hnf-btn hnf-btn--xsmall hnf-btn--icon-tertiary-inverse'));
     await popUpButton.click();
@@ -32,4 +58,4 @@ module.exports = function () {
    
     
   });
-}
+}*/

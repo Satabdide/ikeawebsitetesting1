@@ -6,15 +6,15 @@
     "test": "node node_modules/updated-selenium-cucumber-js/index",
     "test-shopping-cart-adding": "node node_modules/updated-selenium-cucumber-js/index -f features/shopping-cart-adding.feature",
     "test-detailed-information": "node node_modules/updated-selenium-cucumber-js/index -f features/detailed-information.feature",
-    "test-Product-price-in-shopping-cart":"node node_modules/updated-selenium-cucumber-js/index -f features/Product-price-in-shopping-cart.feature"
-    
+    "test-Product-price-in-shopping-cart": "node node_modules/updated-selenium-cucumber-js/index -f features/Product-price-in-shopping-cart.feature",
+    "test-Login": "node node_modules/updated-selenium-cucumber-js/index -f features/Login"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "selenium-cucumber-js": "^1.8.1",
-    "updated-selenium-cucumber-js": "^1.8.3-rc4"
+    "selenium-cucumber-js": "^1.0.3",
+    "updated-selenium-cucumber-js": "^1.8.5"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,6 @@
     "url": "https://github.com/Satabdide/ikeawebsitetesting/issues"
   },
   "homepage": "https://github.com/Satabdide/ikeawebsitetesting#readme",
+  "devDependencies": {},
   "description": ""
 }

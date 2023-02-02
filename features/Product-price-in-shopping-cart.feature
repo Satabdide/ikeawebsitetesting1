@@ -9,12 +9,12 @@ Feature: Calculating products in the shopping cart
 
   Scenario: Search and add one product from the ikea:s website
     When I add "Slattum" to the shopping cart
-    Then the shopping cart must display 1 products
-   # And the mini-cart should show correct total price
+    Then the shopping cart must display 1 products and the price
+    
   
   Scenario: Search and add one product from the ikea:s website
     When I add "Malm" to the shopping cart
-    Then the shopping cart must display 1 products
+    Then the shopping cart must display 1 products and the price
   
 
   
