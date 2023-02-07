@@ -1,5 +1,5 @@
 module.exports = function () {
-
+  // Going to the website
   this.Given(/^that we are on ikea's website$/, async function () {
     await helpers.loadPage('https://www.ikea.se/');
   });
